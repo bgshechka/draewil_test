@@ -1,0 +1,4 @@
+--reporter nyan test/specs/**/*.js
+--ui bdd
+--recursive
+--require test/mocha.env.js

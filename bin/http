@@ -1,0 +1,5 @@
+#!/usr/bin/env node
+const container = require('../src/app/http');
+
+const app = container.resolve('app');
+app.start(process.argv);

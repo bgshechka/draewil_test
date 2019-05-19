@@ -1,0 +1,41 @@
+{
+  "name": "draewil-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc mocha --exit",
+    "recreate:db": "node ./bin/cli recreate:db",
+    "serve": "node ./bin/http",
+    "lint": "eslint --config=./.eslintrc test src"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "awilix": "^4.2.2",
+    "axios": "^0.18.0",
+    "body-parser": "^1.19.0",
+    "commander": "^2.20.0",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.0",
+    "mongoose": "^5.5.9",
+    "on-finished": "^2.3.0",
+    "tcomb": "^3.2.29",
+    "tcomb-validation": "^3.4.1",
+    "uuid": "^3.3.2",
+    "winston": "^3.2.1",
+    "xml2js": "^0.4.19"
+  },
+  "devDependencies": {
+    "axios-mock-adapter": "^1.16.0",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "eslint": "^5.16.0",
+    "eslint-config-google": "^0.13.0",
+    "eslint-plugin-mocha": "^5.3.0",
+    "faker": "^4.1.0",
+    "mocha": "^6.1.4",
+    "mongodb-memory-server": "^5.1.2",
+    "nyc": "^14.1.1"
+  }
+}
